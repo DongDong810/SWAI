@@ -5,6 +5,7 @@ import Breakpoints from '../utils/Breakpoints';
 import * as StyleSheet from '../utils/StyleSheet';
 import useWindowDimensions from '../utils/useWindowDimensions';
 import {
+  Circle,
   Icon,
   ScreenContainer,
   SimpleStyleFlatList,
@@ -17,7 +18,7 @@ import { useIsFocused } from '@react-navigation/native';
 import { ActivityIndicator, Image, Text, View } from 'react-native';
 import { Fetch } from 'react-request';
 
-const FriendsListScreen = props => {
+const Temp2Screen = props => {
   const { theme, navigation } = props;
   const dimensions = useWindowDimensions();
   const Constants = GlobalVariables.useValues();
@@ -65,7 +66,7 @@ const FriendsListScreen = props => {
     <ScreenContainer
       hasSafeArea={true}
       hasTopSafeArea={false}
-      scrollable={false}
+      scrollable={true}
       style={StyleSheet.applyWidth(
         { backgroundColor: theme.colors['Background'], height: '100%' },
         dimensions.width
@@ -171,21 +172,17 @@ const FriendsListScreen = props => {
         horizontal={false}
         keyboardShouldPersistTaps={'never'}
         nestedScrollEnabled={false}
+        showsHorizontalScrollIndicator={true}
         showsVerticalScrollIndicator={true}
-        showsHorizontalScrollIndicator={false}
-        style={StyleSheet.applyWidth(
-          { paddingLeft: 16, paddingRight: 16 },
-          dimensions.width
-        )}
       >
         {/* Friends List */}
         <View
           style={StyleSheet.applyWidth(
             {
-              alignSelf: 'flex-start',
               flex: 1,
               flexDirection: 'row',
-              justifyContent: 'flex-start',
+              paddingLeft: 20,
+              paddingRight: 10,
             },
             dimensions.width
           )}
@@ -210,7 +207,7 @@ const FriendsListScreen = props => {
                     listData?.id ?? listData?.uuid ?? index.toString()
                   }
                   keyboardShouldPersistTaps={'never'}
-                  listKey={'BGxjDDkb'}
+                  listKey={'XN0FRGVa'}
                   nestedScrollEnabled={false}
                   onEndReachedThreshold={0.5}
                   renderItem={({ item, index }) => {
@@ -265,7 +262,7 @@ const FriendsListScreen = props => {
                               {
                                 alignItems: 'center',
                                 flex: 1,
-                                marginLeft: 20,
+                                marginLeft: 14,
                                 marginRight: 20,
                               },
                               dimensions.width
@@ -314,6 +311,10 @@ const FriendsListScreen = props => {
                   numColumns={2}
                   showsHorizontalScrollIndicator={false}
                   showsVerticalScrollIndicator={false}
+                  style={StyleSheet.applyWidth(
+                    { marginRight: 10 },
+                    dimensions.width
+                  )}
                 />
               );
             }}
@@ -324,7 +325,6 @@ const FriendsListScreen = props => {
       <View
         style={StyleSheet.applyWidth(
           {
-            alignContent: 'flex-end',
             alignItems: 'center',
             backgroundColor: theme.colors['NFT_TIME_Light_Gray'],
             borderTopLeftRadius: 20,
@@ -332,7 +332,6 @@ const FriendsListScreen = props => {
             flexDirection: 'row',
             height: 80,
             justifyContent: 'space-around',
-            position: 'relative',
           },
           dimensions.width
         )}
@@ -466,4 +465,4 @@ const FriendsListScreen = props => {
   );
 };
 
-export default withTheme(FriendsListScreen);
+export default withTheme(Temp2Screen);

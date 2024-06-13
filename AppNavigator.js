@@ -17,6 +17,7 @@ import FriendsListScreen from './screens/FriendsListScreen';
 import FriendsProfileScreen from './screens/FriendsProfileScreen';
 import Screen1Landing from './screens/Screen1Landing';
 import Screen2Login from './screens/Screen2Login';
+import Temp2Screen from './screens/Temp2Screen';
 import TempScreen from './screens/TempScreen';
 import UserIdealTypeScreen from './screens/UserIdealTypeScreen';
 import UserProfileScreen from './screens/UserProfileScreen';
@@ -284,6 +285,13 @@ export default function RootAppNavigator() {
           component={UserProfileScreen}
           options={({ navigation }) => ({
             title: 'User - Profile',
+          })}
+        />
+        <Stack.Screen
+          name="Temp2Screen"
+          component={Temp2Screen}
+          options={({ navigation }) => ({
+            title: 'Temp 2',
           })}
         />
         <Stack.Screen name="Auth" component={Auth} />

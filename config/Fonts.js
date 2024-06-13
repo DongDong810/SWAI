@@ -7,6 +7,6 @@ export default {
   Merriweather_700Bold: require('../assets/fonts/Merriweather_700Bold.ttf'),
   PTSerif_700Bold: require('../assets/fonts/PTSerif_700Bold.ttf'),
   Pacifico_400Regular: require('../assets/fonts/Pacifico_400Regular.ttf'),
-  Poppins_400Regular: require('../assets/fonts/Poppins_400Regular.ttf'),
   Poppins_500Medium: require('../assets/fonts/Poppins_500Medium.ttf'),
+  Poppins_400Regular: require('../assets/fonts/Poppins_400Regular.ttf'),
 };

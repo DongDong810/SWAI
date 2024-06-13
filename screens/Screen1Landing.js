@@ -15,7 +15,7 @@ const Screen1Landing = props => {
     <ScreenContainer
       hasBottomSafeArea={false}
       hasSafeArea={false}
-      hasTopSafeArea={false}
+      hasTopSafeArea={true}
       scrollable={true}
     >
       {/* Header Wrapper */}

@@ -47,8 +47,8 @@ const App = () => {
     Merriweather_700Bold: Fonts.Merriweather_700Bold,
     PTSerif_700Bold: Fonts.PTSerif_700Bold,
     Pacifico_400Regular: Fonts.Pacifico_400Regular,
-    Poppins_400Regular: Fonts.Poppins_400Regular,
     Poppins_500Medium: Fonts.Poppins_500Medium,
+    Poppins_400Regular: Fonts.Poppins_400Regular,
   });
 
   React.useEffect(() => {
