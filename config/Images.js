@@ -1,0 +1,16 @@
+export default {
+  JulianWanWNoLnJo7tS8Unsplash1: require('../assets/images/JulianWanWNoLnJo7tS8Unsplash1.jpg'),
+  PeoplebitProfilePlaceholder: require('../assets/images/PeoplebitProfilePlaceholder.png'),
+  ScreenShot20211012At102619AM: require('../assets/images/ScreenShot20211012At102619AM.png'),
+  ScreenShot20211012At102757AM: require('../assets/images/ScreenShot20211012At102757AM.png'),
+  MiroodlesSticker: require('../assets/images/MiroodlesSticker.png'),
+  ChristinaWocintechchatComLQ1t8Ms5PYUnsplash: require('../assets/images/ChristinaWocintechchatComLQ1t8Ms5PYUnsplash.jpg'),
+  VickyHladynetsC8Ta0gwPbQgUnsplash: require('../assets/images/VickyHladynetsC8Ta0gwPbQgUnsplash.jpg'),
+  ViniciusWiesehoferUOavPZ38lEUnsplash: require('../assets/images/ViniciusWiesehoferUOavPZ38lEUnsplash.jpg'),
+  UserImage: require('../assets/images/UserImage.png'),
+  Landing: require('../assets/images/Landing.jpg'),
+  Hobby: require('../assets/images/Hobby.jpeg'),
+  JulianWanWNoLnJo7tS8Unsplash: require('../assets/images/JulianWanWNoLnJo7tS8Unsplash.jpg'),
+  Friend: require('../assets/images/Friend.jpg'),
+  _360F228045930DwMoYC195Gx61ZwtLDYXrqzESVTcPOaS: require('../assets/images/360F228045930DwMoYC195Gx61ZwtLDYXrqzESVTcPOaS.jpg'),
+};
