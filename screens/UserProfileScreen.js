@@ -172,7 +172,7 @@ const UserProfileScreen = props => {
             <Touchable
               onPress={() => {
                 try {
-                  navigation.navigate('Screen1Landing2');
+                  navigation.navigate('Auth', { screen: 'Screen1Landing' });
                   setGlobalVariableValue({
                     key: 'userID',
                     value: '',

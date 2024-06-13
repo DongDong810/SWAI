@@ -15,7 +15,7 @@ import useWindowDimensions from './utils/useWindowDimensions';
 import FriendsIdealTypeScreen from './screens/FriendsIdealTypeScreen';
 import FriendsListScreen from './screens/FriendsListScreen';
 import FriendsProfileScreen from './screens/FriendsProfileScreen';
-import Screen1Landing2 from './screens/Screen1Landing2';
+import Screen1Landing from './screens/Screen1Landing';
 import Screen2Login from './screens/Screen2Login';
 import TempScreen from './screens/TempScreen';
 import UserIdealTypeScreen from './screens/UserIdealTypeScreen';
@@ -47,9 +47,10 @@ function Auth() {
       })}
     >
       <Stack.Screen
-        name="Screen1Landing2"
-        component={Screen1Landing2}
+        name="Screen1Landing"
+        component={Screen1Landing}
         options={({ navigation }) => ({
+          headerShown: false,
           title: '1 Landing',
         })}
       />
@@ -233,6 +234,7 @@ export default function RootAppNavigator() {
     >
       <Stack.Navigator
         initialRouteName="Auth"
+        presentation="card"
         screenOptions={({ navigation }) => ({
           headerBackImage:
             Platform.OS === 'android' ? DefaultAndroidBackIcon : null,

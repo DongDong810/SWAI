@@ -86,7 +86,7 @@
     },
     "androidNavigationBar": {},
     "web": {
-      "display": "fullscreen",
+      "display": "browser",
       "themeColor": "#000000"
     },
     "notification": {
