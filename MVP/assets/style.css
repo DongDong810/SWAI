@@ -1,0 +1,69 @@
+/* 이미지를 가운데 정렬하기 위한 스타일 */
+#image-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* X 버튼 스타일 */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: red;
+  font-size: 25px;
+}
+
+/* 전체 화면 팝업창*/
+img {
+  cursor: pointer;
+}
+
+.image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 이미지가 너무 커서 화면 밖으로 나갈 경우를 대비하여 오버플로우를 숨김 */
+}
+
+/* 이미지 스타일 */
+.fullscreen-image {
+  width: auto;
+  height: auto;
+  max-width: 100%; /* 부모 요소에 맞춰질 때 이미지의 최대 너비 설정 */
+  max-height: 100%; /* 부모 요소에 맞춰질 때 이미지의 최대 높이 설정 */
+  display: block;
+  margin: auto;
+}
+
+/* 팝업창 꾸미기 */
+#popup {
+  background-color: #ffffff; /* 팝업 배경색 */
+  color: #151414fb; /* 텍스트 색상 */
+  padding: 20px; /* 내부 여백 */
+  border-radius: 20px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  max-width: 2000px; /* 최대 너비 */
+  margin: 50px auto; /* 가운데 정렬 */
+  text-align: center;
+  border: 2px solid #46a8ad;
+  min-height: 30px;
+}
+
+#popup h2 {
+  font-size: 24px; /* 제목 폰트 크기 */
+  margin-bottom: 20px; /* 아래 여백 */
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+#popup p {
+  font-size: 16px; /* 문단 폰트 크기 */
+  font-family: 'Arial', sans-serif;
+}
