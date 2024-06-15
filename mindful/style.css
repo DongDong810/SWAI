@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 60%;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px; /* Adjust this to move the header down */
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.start-now button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sign-up .brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 52px;
+  margin-bottom: 10px;
+  color: #25aac1;
+}
+
+.sign-up button {
+  padding: 10px 20px;
+  background-color: #203dc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.feature button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reviews {
+  margin-top: 40px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.reviews form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews form .rate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviews form .stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.reviews form .stars input {
+  display: none;
+}
+
+.reviews form .stars label {
+  font-size: 30px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.reviews form .stars input:checked ~ label,
+.reviews form .stars label:hover,
+.reviews form .stars label:hover ~ label {
+  color: #f7d106;
+}
+
+.reviews form textarea,
+.reviews form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.reviews form button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Text */
+.num {
+  color: rgb(10, 138, 223);
+}
+
+.step-bold {
+  font-weight: bold;
+  color: rgb(37, 115, 168);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-placeholder {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .sign-up button {
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Mate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Mindful Mate</h1>
+            </div>
+            <div class="start-now">
+                <button onclick="location.href='test.html'">Start Now!</button>
+            </div>
+        </header>
+        <main>
+            <div class="intro">
+                <div class="image-section">
+                    <img src="logo.png" alt="Mindful Mate Logo" class="image-placeholder">
+                    <div class="sign-up">
+                        <h2 class="brand">mindful mate</h2>
+                        <button onclick="location.href='https://74pa74l6vw.draftbit.app'">Start</button>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <h3 class="num">01</h3>
+                        <p class="step-bold">자신의 프로필 작성하기!</p>
+                        <p>(현재 이상형만 작성 가능합니다. 유저 이름 및 비밀번호는 임의로 설정하시면 됩니다. 유저 이름은 외부에서 볼 수 있습니다.)</p>
+                    </div>
+                    <div class="feature">
+                      <h3 class="num">02</h3>
+                        <p class="step-bold">친구 초대하기!</p>
+                        <p>친구에게 공유하여 친구도 프로필을 작성하도록 합니다.</p>
+                    </div>
+                    <div class="feature">
+                      <h3 class="num">03</h3>
+                        <p class="step-bold">내용 공유하기!</p>
+                        <p>Friends list에서 서로의 목록을 확인할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="reviews">
+                <h2>Reviews</h2>
+                <form id="review-form">
+                    <div class="rate">
+                        <span>Rate:</span>
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rate" value="5"><label for="star5" title="5 stars">☆</label>
+                            <input type="radio" id="star4" name="rate" value="4"><label for="star4" title="4 stars">☆</label>
+                            <input type="radio" id="star3" name="rate" value="3"><label for="star3" title="3 stars">☆</label>
+                            <input type="radio" id="star2" name="rate" value="2"><label for="star2" title="2 stars">☆</label>
+                            <input type="radio" id="star1" name="rate" value="1"><label for="star1" title="1 star">☆</label>
+                        </div>
+                    </div>
+                    <textarea name="message" placeholder="Comment" id="submit-advice" required></textarea>
+                    <input type="email" name="email" placeholder="Email" id="submit-email">
+                    <button type="submit" id="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
