@@ -1,16 +1,19 @@
-# Welcome to your Draftbit app!
+# Mindful Mate App!
 
-This `README` is designed to help you get your Draftbit app running locally. Read
-through the next few sections carefully, and if you encounter any issues please
-do not hesitate to post in [Community](https://community.draftbit.com).
+"Make your profile & share with your friends"
+
+이 README 파일에서는 각 결과물의 전체적인 구조와 실행 방법에 대해서 다룰 것입니다.
+총 3개의 결과물을 담고 있습니다.
+1. MVT Landing Page HTML (MVP folder)
+2. Helper page for loading & review (mindful folder)
+3. Implementation of Mindful Mate App (rest or the folders)
+
+
 
 > Note that all of the commands in this document should be run using your
 > computer's **command line**. If you're unsure of what this is, please read
 > [this](https://tutorial.djangogirls.org/en/intro_to_command_line/) guide
 > before moving on.
-
-Remember, at any point you can go back to [build.draftbit.com](https://build.draftbit.com) and continue building your app
-there!
 
 ## Requirements
 
